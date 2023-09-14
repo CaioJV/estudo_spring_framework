@@ -9,6 +9,7 @@ public class CursoFrameworkApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		SpringApplication.run(CursoFrameworkApplication.class, args);
+		System.out.println("Branch Casa");
 	}
 
 	@Override
