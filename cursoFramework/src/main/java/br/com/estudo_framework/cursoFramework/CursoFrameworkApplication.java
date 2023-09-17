@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import br.com.estudo_framework.service.ConsumoApi;
 
 @SpringBootApplication
-public class CursoFrameworkApplication implements CommandLineRunner{
+public class CursoFrameworkApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CursoFrameworkApplication.class, args);
@@ -18,7 +18,7 @@ public class CursoFrameworkApplication implements CommandLineRunner{
 		System.out.println("Primeiro projeto Spring sem Web");
 		ConsumoApi consumoAPI = new ConsumoApi();
 		var json = consumoAPI.obterDados("https://www.omdbapi.com/?t=gilmore+girls&apikey=6585022c");
-		System.out.println("json");
+		System.out.println(json);
 	}
 
 }
